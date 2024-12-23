@@ -13,4 +13,15 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: Arial, sans-serif;
+  font-size: 1.125em;
+  font-variation-settings: 'wght' var(--normal-text);
+  font-style: normal;
+  line-height: 1.3125em;
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+      font-family: var(--main-font), sans-serif;
+  }
 }
