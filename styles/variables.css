@@ -2,8 +2,10 @@
     а так же их изменения в зависимости от ширины устройства */
 
 :root {
+    --min-width-content: 480px;
+    --max-width-content: 700px;
     --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P';
+    --accent-font: 'PressStart2P-Regular';
     --bold-text: 700;
     --normal-text: 400;
 }

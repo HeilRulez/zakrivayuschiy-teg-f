@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
-    <link rel="icon" href="./images/favicon.ico" sizes="any">
-    <link rel="icon" href="./images/svg/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -14,11 +14,50 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
+    <header class="header width-content">
+      <p class="header__logo">&lt;/HTML&gt;</p>
+      <h1 class="header__title">Закрывающий тег</h1>
+    </header>
     <main>
-      <svg viewBox="0 0 500 500">
-        <use href="./images/svg/floppy.svg#floppy">
-      </svg>
+      <ul class="card-list">
+        <li class="width-content">
+          <section class="card">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+            <img
+              class="card__img"
+              src="./images/content/image_1.png"
+              alt="микроавтобус"
+              loading="lazy"
+            />
+            <div class="card__content">
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p contenteditable="true" spellcheck="true">
+                Место для ваших воспоминаний о начале обучения.
+              </p>
+              <div class="card__buttons">
+                <button class="card__icon-button">
+                  <img class="like-icon" src="./images/svg/heart.svg" />
+                </button>
+                <button class="card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </li>
+      </ul>
+      <button class="">
+        <!-- <svg viewBox="0 0 500 500">
+          <use href="./images/svg/floppy.svg#floppy">
+        </svg> -->
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
