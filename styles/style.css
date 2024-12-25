@@ -64,26 +64,49 @@
   list-style: none;
 }
 
-.card {
-  border: 2px solid #000;
-}
-
 .card__title {
   font-family: var(--main-font);
   font-variation-settings: 'wght' var(--bold-text);
   font-size: 1.125em;
   padding: 3px 10px 6px 10px;
+  border: 2px solid #000;
 }
 
 .card__img {
   width: 100%;
   object-fit: cover;
+  mix-blend-mode: hard-light;
+}
+
+.card__container-img {
+  position: relative;
+  margin: 0 0 -6px 0;
+}
+
+.card__label-img {
+  position: absolute;
+  inset-inline-end: clamp(11px, 2vw, 25px);
+  inset-block-start: 25px;
+  mix-blend-mode: hard-light;
+  font-family: var(--accent-font);
+  font-size: 0.875em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px var(--color-text-outline),
+              -1px -1px 2px var(--color-text-outline);
+}
+
+@supports (-webkit-text-stroke: 1px var(--color-text-outline)) {
+  .card__label-img {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--color-text-outline);
+  }
 }
 
 .card__content {
   display: grid;
   gap: 25px;
   padding: 25px;
+  border: 2px solid #000;
 }
 
 .card__buttons {
@@ -91,8 +114,9 @@
 }
 
 .card__icon-button {
-  translate: 0 4px;
- 
+  translate: 0 10px;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .card__like-button {
