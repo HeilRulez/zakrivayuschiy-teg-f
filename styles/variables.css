@@ -2,11 +2,24 @@
     а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --min-width-content: 480px;
-    --max-width-content: 700px;
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P-Regular';
-    --bold-text: 700;
-    --normal-text: 400;
-    --color-text-outline: #fff;
+  --min-width-content: 375px;
+  --max-width-content: 700px;
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P-Regular";
+  --bold-text: 700;
+  --normal-text: 400;
+  --color-white: #fff;
+  --color-black: #000;
+  --size-ico-save: 21px;
+  --padding-dialog: 30px;
+  --bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+                linear-gradient(#e7e7e7 0.01dvb, #1a1a1a);
+}
+
+@media (width <= 375px) {
+  :root {
+    --size-ico-save: 28px;
+    --padding-dialog: 30px 42px;
+  }
 }
