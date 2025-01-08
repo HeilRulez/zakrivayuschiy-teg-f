@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Закрывающий тег</title>
-    <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/svg/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" >
+    <link rel="icon" href="./images/svg/favicon.svg" type="image/svg+xml" >
+    <link rel="apple-touch-icon" href="./images/favicon.png" >
+    <link rel="stylesheet" href="./fonts/fonts.css" >
+    <link rel="stylesheet" href="./styles/variables.css" >
+    <link rel="stylesheet" href="./styles/globals.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="stylesheet" href="./styles/animations.css" >
   </head>
   <body class="page">
     <header class="header width-content">
@@ -26,12 +26,38 @@
               Фритрек и нулевой спринт: Подготовка к работе
             </h2>
             <figure class="card__container-img">
-              <img
-                class="card__img"
-                src="./images/content/photo.avif"
-                alt="микроавтобус"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/content/photo_1440.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/content/photo_1024.avif"
+                  type="image/avif"
+                >
+                <source
+                  srcset="./images/content/photo_480.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/content/photo_480.jpg"
+                  type="image/jpeg"
+                >
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/content/photo_1024.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__img"
+                  src="./images/content/photo_1440.jpg"
+                  alt="микроавтобус"
+                  loading="lazy"
+                >
+              </picture>
               <figcaption class="card__label-img">&lt;/HTML&gt;</figcaption>
             </figure>
             <div class="card__content">
@@ -40,11 +66,15 @@
                 проникнуться основами и настроиться на учёбу. И, возможно,
                 подумать, как новые знания могут повлиять на ваше будущее.
               </p>
-              <p contenteditable="true" spellcheck="true">
+              <p spellcheck="true">
                 Место для ваших воспоминаний о начале обучения.
               </p>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-labelledby="like-button-01"
+                >
                   <svg
                     class="like-icon"
                     width="34"
@@ -73,7 +103,11 @@
                     />
                   </svg>
                 </button>
-                <button class="button card__like-button">
+                <button
+                  type="button"
+                  class="button card__like-button"
+                  id="like-button-01"
+                >
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -84,12 +118,38 @@
           <section class="card">
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             <figure class="card__container-img">
-              <img
-                class="card__img filter-sepia"
-                src="./images/content/photo.avif"
-                alt="микроавтобус"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/content/photo_1440.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/content/photo_1024.avif"
+                  type="image/avif"
+                >
+                <source
+                  srcset="./images/content/photo_480.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/content/photo_480.jpg"
+                  type="image/jpeg"
+                >
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/content/photo_1024.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__img filter-sepia"
+                  src="./images/content/photo_1440.jpg"
+                  alt="микроавтобус"
+                  loading="lazy"
+                >
+              </picture>
               <figcaption class="card__label-img">&lt;/HTML&gt;</figcaption>
             </figure>
             <div class="card__content">
@@ -101,11 +161,15 @@
                 вопросы: с чего начать? а вдруг будет слишком сложно? что, если
                 я не справлюсь?
               </p>
-              <p contenteditable="true" spellcheck="true">
+              <p spellcheck="true">
                 Место для ваших воспоминаний о начале обучения.
               </p>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-labelledby="like-button-02"
+                >
                   <svg
                     class="like-icon"
                     width="34"
@@ -134,7 +198,11 @@
                     />
                   </svg>
                 </button>
-                <button class="button card__like-button">
+                <button
+                  type="button"
+                  class="button card__like-button"
+                  id="like-button-02"
+                >
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -145,12 +213,38 @@
           <section class="card">
             <h2 class="card__title">1 спринт: А если не получится?</h2>
             <figure class="card__container-img">
-              <img
-                class="card__img filter-hue"
-                src="./images/content/photo.avif"
-                alt="микроавтобус"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/content/photo_1440.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/content/photo_1024.avif"
+                  type="image/avif"
+                >
+                <source
+                  srcset="./images/content/photo_480.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/content/photo_480.jpg"
+                  type="image/jpeg"
+                >
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/content/photo_1024.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__img filter-hue"
+                  src="./images/content/photo_1440.jpg"
+                  alt="микроавтобус"
+                  loading="lazy"
+                >
+              </picture>
               <figcaption class="card__label-img">&lt;CSS&gt;</figcaption>
             </figure>
             <div class="card__content">
@@ -159,11 +253,15 @@
                 Радость могла быстро померкнуть и смениться ожиданием провала.
                 Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
               </p>
-              <p contenteditable="true" spellcheck="true">
+              <p spellcheck="true">
                 Место для ваших воспоминаний о начале обучения.
               </p>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-labelledby="like-button-03"
+                >
                   <svg
                     class="like-icon"
                     width="34"
@@ -192,7 +290,11 @@
                     />
                   </svg>
                 </button>
-                <button class="button card__like-button">
+                <button
+                  type="button"
+                  class="button card__like-button"
+                  id="like-button-03"
+                >
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -203,12 +305,38 @@
           <section class="card">
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             <figure class="card__container-img">
-              <img
-                class="card__img filter-contrast"
-                src="./images/content/photo.avif"
-                alt="микроавтобус"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/content/photo_1440.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/content/photo_1024.avif"
+                  type="image/avif"
+                >
+                <source
+                  srcset="./images/content/photo_480.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/content/photo_480.jpg"
+                  type="image/jpeg"
+                >
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/content/photo_1024.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__img filter-contrast"
+                  src="./images/content/photo_1440.jpg"
+                  alt="микроавтобус"
+                  loading="lazy"
+                >
+              </picture>
               <figcaption class="card__label-img">&lt;desigions&gt;</figcaption>
             </figure>
             <div class="card__content">
@@ -219,11 +347,15 @@
                 вовсе и не подвержены перфекционизму и вместо того, чтобы
                 сделать идеально, старались просто сделать.
               </p>
-              <p contenteditable="true" spellcheck="true">
+              <p spellcheck="true">
                 Место для ваших воспоминаний о начале обучения.
               </p>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-labelledby="like-button-04"
+                >
                   <svg
                     class="like-icon"
                     width="34"
@@ -252,7 +384,11 @@
                     />
                   </svg>
                 </button>
-                <button class="button card__like-button">
+                <button
+                  type="button"
+                  class="button card__like-button"
+                  id="like-button-04"
+                >
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -263,12 +399,38 @@
           <section class="card">
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             <figure class="card__container-img">
-              <img
-                class="card__img filter-invert"
-                src="./images/content/photo.avif"
-                alt="микроавтобус"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/content/photo_1440.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/content/photo_1024.avif"
+                  type="image/avif"
+                >
+                <source
+                  srcset="./images/content/photo_480.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/content/photo_480.jpg"
+                  type="image/jpeg"
+                >
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/content/photo_1024.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__img filter-invert"
+                  src="./images/content/photo_1440.jpg"
+                  alt="микроавтобус"
+                  loading="lazy"
+                >
+              </picture>
               <figcaption class="card__label-img">care</figcaption>
             </figure>
             <div class="card__content">
@@ -280,11 +442,15 @@
                 поддавался. Осваивать что-то новое легче, когда рядом есть
                 единомышленники, не правда ли?
               </p>
-              <p contenteditable="true" spellcheck="true">
+              <p spellcheck="true">
                 Место для ваших воспоминаний о начале обучения.
               </p>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-labelledby="like-button-05"
+                >
                   <svg
                     class="like-icon"
                     width="34"
@@ -313,7 +479,11 @@
                     />
                   </svg>
                 </button>
-                <button class="button card__like-button">
+                <button
+                  type="button"
+                  class="button card__like-button"
+                  id="like-button-05"
+                >
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -324,12 +494,38 @@
           <section class="card">
             <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             <figure class="card__container-img">
-              <img
-                class="card__img filter-grayscale"
-                src="./images/content/photo.avif"
-                alt="микроавтобус"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/content/photo_1440.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/content/photo_1024.avif"
+                  type="image/avif"
+                >
+                <source
+                  srcset="./images/content/photo_480.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/content/photo_480.jpg"
+                  type="image/jpeg"
+                >
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/content/photo_1024.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__img filter-grayscale"
+                  src="./images/content/photo_1440.jpg"
+                  alt="микроавтобус"
+                  loading="lazy"
+                >
+              </picture>
               <figcaption class="card__label-img">&lt;support&gt;</figcaption>
             </figure>
             <div class="card__content">
@@ -338,11 +534,15 @@
                 момент вам могло показаться, что решения просто иссякли. Значит,
                 пришло время посмотреть на задачу под другим углом.
               </p>
-              <p contenteditable="true" spellcheck="true">
+              <p spellcheck="true">
                 Место для ваших воспоминаний о начале обучения.
               </p>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-labelledby="like-button-06"
+                >
                   <svg
                     class="like-icon"
                     width="34"
@@ -371,7 +571,11 @@
                     />
                   </svg>
                 </button>
-                <button class="button card__like-button">
+                <button
+                  type="button"
+                  class="button card__like-button"
+                  id="like-button-06"
+                >
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -382,12 +586,38 @@
           <section class="card">
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             <figure class="card__container-img">
-              <img
-                class="card__img filter-blur"
-                src="./images/content/photo.avif"
-                alt="микроавтобус"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/content/photo_1440.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/content/photo_1024.avif"
+                  type="image/avif"
+                >
+                <source
+                  srcset="./images/content/photo_480.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/content/photo_480.jpg"
+                  type="image/jpeg"
+                >
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/content/photo_1024.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__img filter-blur"
+                  src="./images/content/photo_1440.jpg"
+                  alt="микроавтобус"
+                  loading="lazy"
+                >
+              </picture>
               <figcaption class="card__label-img">
                 &lt;lifes-style: none;&gt;
               </figcaption>
@@ -400,11 +630,15 @@
                 пожить. В такие моменты очень нужна концентрация. Вспомните,
                 откуда вы её черпали.
               </p>
-              <p contenteditable="true" spellcheck="true">
+              <p spellcheck="true">
                 Место для ваших воспоминаний о начале обучения.
               </p>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-labelledby="like-button-07"
+                >
                   <svg
                     class="like-icon"
                     width="34"
@@ -433,7 +667,11 @@
                     />
                   </svg>
                 </button>
-                <button class="button card__like-button">
+                <button
+                  type="button"
+                  class="button card__like-button"
+                  id="like-button-07"
+                >
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -444,12 +682,38 @@
           <section class="card">
             <h2 class="card__title">«Сейчас я здесь»</h2>
             <figure class="card__container-img">
-              <img
-                class="card__img filter-mixid"
-                src="./images/content/photo.avif"
-                alt="микроавтобус"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./images/content/photo_1440.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/content/photo_1024.avif"
+                  type="image/avif"
+                >
+                <source
+                  srcset="./images/content/photo_480.avif"
+                  type="image/avif"
+                >
+                <source
+                  media="(max-width: 480px)"
+                  srcset="./images/content/photo_480.jpg"
+                  type="image/jpeg"
+                >
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/content/photo_1024.jpg"
+                  type="image/jpeg"
+                >
+                <img
+                  class="card__img filter-mixid"
+                  src="./images/content/photo_1440.jpg"
+                  alt="микроавтобус"
+                  loading="lazy"
+                >
+              </picture>
               <figcaption class="card__label-img">
                 &lt;experience&gt;
               </figcaption>
@@ -463,11 +727,15 @@
                 полностью не получится, но это тот случай, когда важен сам
                 процесс познания. Ведь часто путь — и есть результат.
               </p>
-              <p contenteditable="true" spellcheck="true">
+              <p spellcheck="true">
                 Место для ваших воспоминаний о начале обучения.
               </p>
               <div class="card__buttons">
-                <button class="card__icon-button">
+                <button
+                  type="button"
+                  class="card__icon-button"
+                  aria-labelledby="like-button-08"
+                >
                   <svg
                     class="like-icon"
                     width="34"
@@ -496,7 +764,11 @@
                     />
                   </svg>
                 </button>
-                <button class="button card__like-button">
+                <button
+                  type="button"
+                  class="button card__like-button"
+                  id="like-button-08"
+                >
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -508,16 +780,19 @@
         class="button save-button"
         onclick="window['popup-save'].showModal()"
       >
-        <!-- <svg class="save-button__ico" viewBox="0 0 40 40">
-          <use class="save-button__ico-open" href="./images/svg/floppy.svg#floppy">
-        </svg> -->
+        <svg class="save-button__ico" viewBox="0 0 40 40">
+          <use
+            class="save-button__ico-open"
+            href="./images/svg/floppy.svg#floppy"
+          />
+        </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
     <dialog class="dialog" id="popup-save">
-      <!-- <svg class="save-button__ico" viewBox="0 0 40 40">
-        <use href="./images/svg/floppy.svg#floppy">
-      </svg> -->
+      <svg class="save-button__ico" viewBox="0 0 40 40">
+        <use href="./images/svg/floppy.svg#floppy" />
+      </svg>
       <p class="button__text">Вставьте дискету, чтобы продолжить</p>
       <button
         class="button dialog__save-button"
